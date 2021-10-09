@@ -20,5 +20,20 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
   <header class="">
-    <p class="p-test">aaaa</p>
+    <div class="header">
+      <div class="logo">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-sm.png" alt="">
+        <p>リフォーム、注文住宅は碧南市の大友建築</p>
+      </div>
+      <div class="header-nav">
+        <ul>
+          <li>大友建築について</li>
+          <li>注文住宅</li>
+          <li>リフォーム</li>
+          <li>防音室</li>
+          <li>施工事例</li>
+          <li>会社概要</li>
+        </ul>
+      </div>
+    </div>
   </header>
