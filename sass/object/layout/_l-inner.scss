@@ -1,17 +1,23 @@
 // インナー
 .l-inner {
+	.main-bg {
+		background-image: url(#{$pass}2021/10/bg.png);
+		background-repeat: no-repeat;
+	}
+	box-sizing: border-box;
 	margin: 0 auto;
 	max-width: 1080px;
 	width: 100%;
 	height: inherit;
-	padding-right: $padding-pc;
-	padding-left: $padding-pc;
 	.house-image {
 		display: block;
 		margin: 0 auto 16px;
 	}
 	.top--info {
 		display: flex;
+		justify-content: space-around;
+		margin-top: 30px;
+		margin-bottom: 142px;
 		.top--info--1 {
 			width: 50%;
 			.top--info__text{
@@ -21,12 +27,28 @@
 				box-sizing: border-box;
 				padding: 20px 20px 40px;
 				line-height: 2rem;
+				border-radius: 15px;
 				.campany__name {
 					line-height: 36px;
 					font-size: 30px;
 				}
 			}
 		}
+		.top--info--2 {
+			.map {
+				width: 395px !important;
+				height: 275px !important;
+			}
+		}
+	}
+	.examples {
+		margin: 0 60px;
+		display: flex;
+		list-style: none;
+		justify-content: space-between;
+	}
+	.sample--title {
+		margin-bottom: 65px;
 	}
 	.samples{
 		display: flex;
@@ -34,7 +56,15 @@
 		margin-right: 45px;
 		justify-content: space-between;
 		margin-bottom: 145px;
+		h4.main-bg {
+			width: 180px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			margin-bottom: 15px;
+		}
 		.text-240 {
+			margin-top: 30px;
 			border-radius: 15px;
 			width: 240px;
 			height: 265px;
@@ -49,6 +79,11 @@
 		font-size: 32px;
 		text-align: center;
 		font-weight: 200;
+	}
+	.contact--us {
+		background-image: url(#{$pass}2021/10/bg.png);
+		width: 504px;
+		margin: 0 auto;
 	}
 	.contact--items {
 		display: flex;
@@ -87,12 +122,14 @@
 	.top--image {
 		position: relative;
 		margin-bottom: 30px;
+		width: 1080px;
+		margin: 0 auto;
 	}
 	.top--message {
 		position: absolute;
 		display: block;
-		top: 0;
-		left: 0;
+		top: 45%;
+		left: 25%;
 	}
 	.top-middle__menu {
 		list-style: none;

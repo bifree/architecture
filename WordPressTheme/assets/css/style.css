@@ -175,6 +175,14 @@ select {
 	vertical-align: middle;
 }
 
+.container {
+	border-left: 1px solid #FFD664;
+	border-right: 1px solid #FFD664;
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 1080px;
+}
+
 .l-footer {
 	background-color: #FFD664;
 	box-sizing: border-box;
@@ -217,12 +225,16 @@ select {
 }
 
 .l-inner {
+	box-sizing: border-box;
 	height: inherit;
 	margin: 0 auto;
 	max-width: 1080px;
-	padding-left: 25px;
-	padding-right: 25px;
 	width: 100%;
+}
+
+.l-inner .main-bg {
+	background-image: url(http://bifree222.com/wp-content/uploads/2021/10/bg.png);
+	background-repeat: no-repeat;
 }
 
 .l-inner .house-image {
@@ -232,6 +244,9 @@ select {
 
 .l-inner .top--info {
 	display: flex;
+	justify-content: space-around;
+	margin-bottom: 142px;
+	margin-top: 30px;
 }
 
 .l-inner .top--info .top--info--1 {
@@ -240,6 +255,7 @@ select {
 
 .l-inner .top--info .top--info--1 .top--info__text {
 	background-color: #FFD664;
+	border-radius: 15px;
 	box-sizing: border-box;
 	line-height: 2rem;
 	margin-top: 16px;
@@ -252,12 +268,36 @@ select {
 	line-height: 36px;
 }
 
+.l-inner .top--info .top--info--2 .map {
+	height: 275px !important;
+	width: 395px !important;
+}
+
+.l-inner .examples {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0 60px;
+}
+
+.l-inner .sample--title {
+	margin-bottom: 65px;
+}
+
 .l-inner .samples {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 145px;
 	margin-left: 45px;
 	margin-right: 45px;
+}
+
+.l-inner .samples h4.main-bg {
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 15px;
+	text-align: center;
+	width: 180px;
 }
 
 .l-inner .samples .text-240 {
@@ -267,6 +307,7 @@ select {
 	font-size: 16px;
 	height: 265px;
 	line-height: 28px;
+	margin-top: 30px;
 	padding: 26px;
 	width: 240px;
 }
@@ -275,6 +316,12 @@ select {
 	font-size: 32px;
 	font-weight: 200;
 	text-align: center;
+}
+
+.l-inner .contact--us {
+	background-image: url(http://bifree222.com/wp-content/uploads/2021/10/bg.png);
+	margin: 0 auto;
+	width: 504px;
 }
 
 .l-inner .contact--items {
@@ -312,15 +359,17 @@ select {
 }
 
 .l-inner .top--image {
+	margin: 0 auto;
 	margin-bottom: 30px;
 	position: relative;
+	width: 1080px;
 }
 
 .l-inner .top--message {
 	display: block;
-	left: 0;
+	left: 25%;
 	position: absolute;
-	top: 0;
+	top: 45%;
 }
 
 .l-inner .top-middle__menu {
@@ -365,6 +414,11 @@ select {
 	width: 180px;
 }
 
+.top--about {
+	margin: 0 auto;
+	width: 960px;
+}
+
 .top--about .top--about__text {
 	background-color: #FFD664;
 	box-sizing: border-box;
@@ -381,6 +435,7 @@ select {
 .top--about .top--about__h3 {
 	font-size: 36px;
 	font-weight: 100;
+	text-align: initial !important;
 }
 
 .about-table .about-table__title {
