@@ -1,290 +1,102 @@
-// ---
-// リセットCSS
-// ---
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
 
-/* リキッドレイアウト対応 */
-html {
-	//375px~787px
-	font-size: vw(375, 16);
-
-	@include mq("sp") {
-		font-size: 16px;
-	}
-
-	//787px~inner
-	@include mq("tab") {
-		font-size: vw(strip-unit($l-inner), 16);
-	}
-
-	//inner~max-screen
-	@media (min-width: $l-inner) {
-		font-size: 16px;
-	}
-}
-
-html,
-body {
-	margin: 0;
-	padding: 0;
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
 
 body {
-	font-family: $font-family-base;
-	font-size: $font-size-base;
-	font-weight: $font-weight-base;
-	color: $text-color;
-	line-height: $lh;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background: $background;
-	overflow-wrap: break-word;
-	min-height: 100vh;
-	min-height: -webkit-fill-available;
-	position: relative;
-	z-index: -9999;
+    line-height:1;
 }
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
+nav ul {
+    list-style:none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p,
-span,
-em,
-small,
-strong,
-sub,
-sup,
-mark,
-del,
-ins,
-strike,
-abbr,
-dfn,
-blockquote,
-q,
-cite,
-code,
-pre,
-ol,
-ul,
-li,
-dl,
-dt,
-dd,
-div,
-section,
-article,
-main,
-aside,
-nav,
-header,
-hgroup,
-footer,
-img,
-figure,
-figcaption,
-address,
-time,
-audio,
-video,
-canvas,
-iframe,
-details,
-summary,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
-	margin: 0;
-	padding: 0;
-	border: 0;
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
 }
 
 a {
-	color: inherit;
-	cursor: pointer;
-	text-decoration: none;
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-	border: none;
-	vertical-align: top;
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
 }
 
-video,
-iframe,
-object {
-	max-width: 100%;
-	height: auto;
-	border: none;
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
 }
 
+del {
+    text-decoration: line-through;
+}
 
-ul,
-ol {
-	list-style: none;
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	width: 100%;
-	table-layout: fixed;
-	border: 1px solid;
+    border-collapse:collapse;
+    border-spacing:0;
 }
 
-th,
-td {
-	padding: 4px 6px;
-	text-align: left;
-	vertical-align: top;
-	border: 1px solid;
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
 }
 
-blockquote,
-q {
-	quotes: none;
-}
-
-blockquote::after,
-blockquote::before,
-q::after,
-q::before {
-	content: "";
-	content: none;
-}
-
-address {
-	font-style: normal;
-}
-
-b,
-strong {
-	font-weight: 700;
-}
-
-form {
-	margin: 0;
-	padding: 0;
-}
-
-label {
-	display: inline-block;
-}
-
-a,
-area,
-button,
-input,
-label,
-select,
-summary,
-textarea,
-[tabindex] {
-	touch-action: manipulation;
-}
-
-input,
-button,
-select,
-optgroup,
-textarea {
-	margin: 0;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
-}
-
-button,
-select {
-	text-transform: none;
-}
-
-select {
-	cursor: pointer;
-}
-
-textarea {
-	overflow: auto;
-	-ms-overflow-style: scrollbar;
-	resize: vertical;
-}
-
-dialog {
-	background-color: inherit;
-	border: solid;
-	color: inherit;
-	display: block;
-	height: fit-content;
-	left: 0;
-	margin: auto;
-	padding: 1em;
-	position: absolute;
-	right: 0;
-	width: fit-content;
-
-	&:not([is-open]) {
-		display: none;
-	}
-}
-
-summary {
-	display: list-item;
-	cursor: pointer;
-}
-
-
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+input, select {
+    vertical-align:middle;
 }
