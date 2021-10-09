@@ -5,19 +5,22 @@ $main-color: #FFD664;
 $btn-color: #000333;
 $btn-text: #fff;
 
+//文字の大きさ
+$main-title: 32px;
+
 // マウスホバー
 $opacity: 0.7; // 透過度
 
 // フォント
 $font-family-base: "fot-tsukuardgothic-std", sans-serif;// ベースフォント
-$font-size-base: 16px; // ベースフォントサイズ
+$font-size-base: 21px; // ベースフォントサイズ
 $font-weight-base: 400; // ベースフォントウェイト
 $lh: 1.6; // ベース行間
 
 // ---
 // レイアウト
 // ---
-$l-inner: 1000px; // インナー幅
+$l-inner: 1080px; // インナー幅
 $l-sp: 768px; // タブレットサイズ
 $l-tab: 1024px; // タブレットサイズ
 $l-pc: 1440px; // パソコン幅

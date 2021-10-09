@@ -175,6 +175,43 @@ select {
 	vertical-align: middle;
 }
 
+.l-footer {
+	background-color: #FFD664;
+	box-sizing: border-box;
+	font-size: 16px;
+	height: 180px;
+	letter-spacing: 0.5;
+	line-height: 19px;
+	margin: 0 auto;
+	padding: 30px;
+	width: 1080px;
+}
+
+.l-footer .footer {
+	display: flex;
+}
+
+.l-footer .footer .footer__info {
+	margin-right: 56px;
+}
+
+.l-footer .footer .footer__info img {
+	margin-bottom: 8px;
+}
+
+.l-footer .footer .footer__info p {
+	margin-bottom: 8px;
+}
+
+.l-footer .footer .footer__menu .menu {
+	display: flex;
+}
+
+.l-footer .footer .footer__menu .menu li a {
+	color: #000;
+	text-decoration: none;
+}
+
 .l-header {
 	display: none;
 }
@@ -182,20 +219,176 @@ select {
 .l-inner {
 	height: inherit;
 	margin: 0 auto;
-	max-width: 1050px;
+	max-width: 1080px;
 	padding-left: 25px;
 	padding-right: 25px;
 	width: 100%;
 }
 
-.c-test {
-	color: red;
-	font-size: 3.125rem;
+.l-inner .house-image {
+	display: block;
+	margin: 0 auto 16px;
 }
 
-.p-test {
-	color: red;
-	font-size: 3.125rem;
+.l-inner .top--info {
+	display: flex;
+}
+
+.l-inner .top--info .top--info--1 {
+	width: 50%;
+}
+
+.l-inner .top--info .top--info--1 .top--info__text {
+	background-color: #FFD664;
+	box-sizing: border-box;
+	line-height: 2rem;
+	margin-top: 16px;
+	padding: 20px 20px 40px;
+	width: 460px;
+}
+
+.l-inner .top--info .top--info--1 .top--info__text .campany__name {
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.l-inner .samples {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 145px;
+	margin-left: 45px;
+	margin-right: 45px;
+}
+
+.l-inner .samples .text-240 {
+	background-color: #FFD664;
+	border-radius: 15px;
+	box-sizing: border-box;
+	font-size: 16px;
+	height: 265px;
+	line-height: 28px;
+	padding: 26px;
+	width: 240px;
+}
+
+.l-inner h3 {
+	font-size: 32px;
+	font-weight: 200;
+	text-align: center;
+}
+
+.l-inner .contact--items {
+	display: flex;
+	height: 300px;
+	margin-top: 66px;
+}
+
+.l-inner .contact--items .contact--tel {
+	width: 50%;
+}
+
+.l-inner .contact--items .contact--tel .contact--tel__inner {
+	margin: 0 auto;
+	text-align: center;
+	width: 180px;
+}
+
+.l-inner .contact--items .contact--tel .contact--tel__inner .contact--tel__text {
+	margin-top: 22px;
+}
+
+.l-inner .contact--items .contact--mail {
+	width: 50%;
+}
+
+.l-inner .contact--items .contact--mail .contact--mail__inner {
+	margin: 0 auto;
+	text-align: center;
+	width: 180px;
+}
+
+.l-inner .contact--items .contact--mail .contact--mail__inner .contact--mail__text {
+	margin-top: 22px;
+}
+
+.l-inner .top--image {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.l-inner .top--message {
+	display: block;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.l-inner .top-middle__menu {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0 auto;
+	margin-bottom: 112px !important;
+	width: 864px;
+}
+
+.l-inner .top-middle__menu li {
+	height: 50px;
+	width: 100px;
+}
+
+.category-span .category-span__news {
+	background-color: #F49600;
+	color: #fff;
+}
+
+.category-span .category-span__event {
+	background-color: #F20034;
+	color: #fff;
+}
+
+.category-span .category-span__blog {
+	background-color: #0DA030;
+	color: #fff;
+}
+
+.more-btn {
+	background-color: #000333;
+	border-radius: 20px;
+	color: #fff;
+	display: block;
+	font-size: 21px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	width: 180px;
+}
+
+.top--about .top--about__text {
+	background-color: #FFD664;
+	box-sizing: border-box;
+	height: auto;
+	line-height: 35px;
+	padding: 15px 30px 15px 30px;
+	width: 520px;
+}
+
+.top--about .top--about__img {
+	z-index: 2;
+}
+
+.top--about .top--about__h3 {
+	font-size: 36px;
+	font-weight: 100;
+}
+
+.about-table .about-table__title {
+	font-size: 24px;
+}
+
+.about-table .about-table__body {
+	font-size: 21px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -215,19 +408,9 @@ select {
 	width: 100%;
 }
 
-.c-test {
-	color: green;
-	font-size: 1.875rem;
-}
-
 }
 
 @media screen and (max-width: 767px) {
-
-.p-test {
-	color: green;
-	font-size: 1.875rem;
-}
 
 .u-hidden-sp {
 	display: none;

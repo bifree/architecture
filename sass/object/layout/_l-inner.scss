@@ -1,18 +1,110 @@
-
 // インナー
 .l-inner {
 	margin: 0 auto;
-	max-width: $l-inner + strip-unit($padding-pc) * 2;
+	max-width: 1080px;
 	width: 100%;
 	height: inherit;
 	padding-right: $padding-pc;
 	padding-left: $padding-pc;
+	.house-image {
+		display: block;
+		margin: 0 auto 16px;
+	}
+	.top--info {
+		display: flex;
+		.top--info--1 {
+			width: 50%;
+			.top--info__text{
+				background-color: $main-color;
+				width: 460px;
+				margin-top: 16px;
+				box-sizing: border-box;
+				padding: 20px 20px 40px;
+				line-height: 2rem;
+				.campany__name {
+					line-height: 36px;
+					font-size: 30px;
+				}
+			}
+		}
+	}
+	.samples{
+		display: flex;
+		margin-left: 45px;
+		margin-right: 45px;
+		justify-content: space-between;
+		margin-bottom: 145px;
+		.text-240 {
+			border-radius: 15px;
+			width: 240px;
+			height: 265px;
+			box-sizing: border-box;
+			background-color: $main-color;
+			font-size: 16px;
+			line-height: 28px;
+			padding: 26px;
+		}
+	}
+	h3{
+		font-size: 32px;
+		text-align: center;
+		font-weight: 200;
+	}
+	.contact--items {
+		display: flex;
+		height: 300px;
+		margin-top: 66px;
+		.contact--tel {
+			width: 50%;
+			.contact--tel__inner {
+				width: 180px;
+				margin: 0 auto;
+				text-align: center;
+				.contact--tel__text {
+					margin-top: 22px;
+				}
+			}
+		}
+		.contact--mail {
+			width: 50%;
+			.contact--mail__inner {
+				width: 180px;
+				margin: 0 auto;
+				text-align: center;
+				.contact--mail__text{
+					margin-top: 22px;
+				}
+			}
+		}
+	}
 
 	@include mq(tab) {
 		max-width: rem(540);
 		width: 100%;
 		padding-right: $padding-sp;
 		padding-left: $padding-sp;
+	}
+	.top--image {
+		position: relative;
+		margin-bottom: 30px;
+	}
+	.top--message {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+	}
+	.top-middle__menu {
+		list-style: none;
+		display: flex;
+		width: 864px;
+		margin: 0 auto;
+		margin-bottom: 112px !important;
+		justify-content: space-between;
+		li {
+			width: 100px;
+			height: 50px;
+		}
 	}
 }
 

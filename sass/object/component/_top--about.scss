@@ -1,0 +1,19 @@
+.top--about {
+	.top--about__text {
+		width: 520px;
+		height: auto;
+		box-sizing: border-box;
+		padding: 15px 30px 15px 30px;	
+		background-color: $main-color;
+		line-height: 35px;
+	}
+
+	.top--about__img {
+		z-index: 2;
+	}
+
+	.top--about__h3 {
+		font-size: 36px;
+		font-weight: 100;
+	}
+}

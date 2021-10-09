@@ -1,23 +1,37 @@
 <?php get_header(); ?>
 
 <h2>会社概要</h2>
-<table>
+<table class="about-table">
 	<tr>
-		<td><span>会社名</span></td>
+		<td><span class="about-table__title">会社名</span></td>
 		<td>大友建築</td>
-		<td><span>所在地</span></td>
+	</tr>
+	<tr>
+		<td><span class="about-table__title">所在地</span></td>
 		<td>〒447-0013　愛知県碧南市白沢町４丁目３７</td>
-		<td><span>TEL</span></td>
+	</tr>
+	<tr>
+		<td><span class="about-table__title">TEL</span></td>
 		<td>0566-42-8648</td>
-		<td><span>FAX</span></td>
+	</tr>
+	<tr>
+		<td><span class="about-table__title">FAX</span></td>
 		<td>0566-48-8648</td>
-		<td><span>代表者</span></td>
+	</tr>
+	<tr>
+		<td><span class="about-table__title">代表者</span></td>
 		<td>鈴木　佑二</td>
-		<td><span>設立</span></td>
+	</tr>
+	<tr>
+		<td><span class="about-table__title">設立</span></td>
 		<td>昭和５９年８月</td>
-		<td><span>従業員数</span></td>
+	</tr>
+	<tr>
+		<td><span class="about-table__title">従業員数</span></td>
 		<td>５名</td>
-		<td><span>許可・登録</span></td>
+	</tr>
+	<tr>
+	<td><span class="about-table__title">許可・登録</span></td>
 		<td>一般建設業　愛知県知事　許可（般-2）第69466号
 建築工事業　大工工事業　屋根工事業　タイル・レンガ・ブロック工
 事業　内装仕上工事業　とび・土工工事業
@@ -29,7 +43,9 @@
 住宅あんしん事業者　届出0011938
 
 従業員：建築士　登録番号34839号</td>
-		<td><span>事業内容</span></td>
+	</tr>
+	<tr>
+		<td><span class="about-table__title">事業内容</span></td>
 		<td>一般建設業　外壁塗装工事　内装工事　耐震工事
 増改築工事　外構　屋根工事　オール電化工事
 水漏れ・雨漏り・排水等のホームメンテナンス
