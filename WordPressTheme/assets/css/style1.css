@@ -1,0 +1,149 @@
+
+
+/* CW納品 10.10 */
+
+/*====================================================================
+                    reset
+====================================================================*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+header, footer, nav, section, article, aside, figure, figcaption {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+/*====================================================================
+                    index
+====================================================================*/
+.main .inner {
+  width: 1080px;
+  margin: 0 auto;
+  padding-top: 100px;
+  border-right: 1px solid #F4AE00;
+  border-left: 1px solid #F4AE00;
+}
+
+.main .custom-home-title {
+  background-size: auto auto;
+  background-color: white;
+  background-image: repeating-linear-gradient(135deg, transparent, transparent 10px, #fff4c5 10px, #fff4c5 20px);
+  height: 100px;
+  padding-left: 50px;
+  line-height: 100px;
+  font-size: 28px;
+}
+
+.main .custom-home-arrow-box {
+  padding-top: 128px;
+  padding-bottom: 34px;
+}
+
+.main .custom-home-arrow-box .custom-home-arrow {
+  position: relative;
+  margin: 0 auto;
+  width: 80px;
+  height: 40px;
+  background-color: #FFD664;
+}
+
+.main .custom-home-arrow-box .custom-home-arrow::after {
+  position: absolute;
+  content: "";
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 0;
+  height: 0;
+  top: -50%;
+  border-style: solid;
+  border-width: 0 40px 40px 40px;
+  border-color: transparent transparent #FFD664 transparent;
+}
+
+.main .custom-home-slider-area__bg {
+  padding-top: 17.25px;
+  padding-bottom: 38.21px;
+  background-color: #FFF4E9;
+}
+
+.main .custom-home-slider-area__bg .custom-home-slider-area__title {
+  font-size: 36px;
+  color: #000333;
+  margin-bottom: 24.35px;
+  text-align: center;
+}
+
+.main .custom-home-slider-area__bg .custom-home-slider-area__img-wrap .vertical-img {
+  height: 880px !important;
+  width: 580px !important;
+}
+
+.main .custom-home-slider-area__bg .custom-home-slider-area__img-wrap .horizontal-img {
+  margin-top: 150px;
+  height: 580px !important;
+  width: 880px !important;
+}
+
+.main .custom-home-slider-area__bg .custom-home-slider-area__img-wrap .slick-slide > div {
+  text-align: center;
+}
+
+.main .custom-home-slider-area .custom-home-slider__thumb-area {
+  width: 580px;
+  margin: 54.5px auto 0 auto;
+}
+
+.main .custom-home-slider-area .custom-home-slider__thumb-area-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -16.88px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .custom-home-slider-area .custom-home-slider__thumb-area-wrap .thumbnail-item {
+  margin-left: 16.88px;
+}
+
+.main .custom-home-slider-area .custom-home-slider__thumb-area-wrap > .vertical-img {
+  width: 72.5px;
+  height: 110px;
+  margin-bottom: 10px;
+}
+
+.main .custom-home-slider-area .custom-home-slider__thumb-area-wrap > .horizontal-img {
+  width: 110px;
+  height: 72.5px;
+}
+
+.main .custom-home-slider-area .custom-home-slider__thumb-area-wrap .thumbnail-current {
+  border: 2px solid #1C1C1C;
+}
+/*# sourceMappingURL=style.css.map */

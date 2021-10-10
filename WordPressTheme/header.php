@@ -6,6 +6,11 @@
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
+  <!-- slick.css -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slick.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slick-theme.css">
+  <!-- main.css -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style1.css">
   <script>
   (function(d) {
     var config = {
@@ -18,6 +23,7 @@
 </script>
   <?php wp_head(); ?>
 </head>
+
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
   <header class="">
