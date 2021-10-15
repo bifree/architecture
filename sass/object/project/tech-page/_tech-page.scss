@@ -1,0 +1,106 @@
+.tech-page {
+	h1 {
+		line-height: 73px;
+		font-size: 42px;
+		font-weight: normal;
+		margin: 48px auto 0;
+		text-align: center;
+	}
+	h2 {
+		font-size: 30px;
+		font-weight: normal;
+		line-height: 56px;
+		text-align: center;
+	}
+	p {
+		font-size: 16px;
+		line-height: 28px;
+	}
+	.tech-top {
+		margin: 67px auto 100px;
+		.tech-top-image {
+			width: 600px;
+			height: 400px;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.tech-top-message {
+			width: 433px;
+		}
+	}
+	.work--flow {
+		background-color: #FFF4E9;
+		width: 700px;
+		margin: 0 auto;
+		padding-bottom: 20px;
+		.work--flow--box {
+			width: 640px;
+			margin: 0 auto;
+			height: 250px;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			border-radius: 10px;
+			.work--flow--inner {
+			background: #FFFFFF 0% 0% no-repeat padding-box;
+			opacity: 0.75;
+			z-index: 1;
+			height: 100%;
+			h2{
+				text-align: center;
+			}
+			p {
+				margin: 0 auto;
+				width: 602px;
+			}
+			}
+			.custom-home-title {
+				background-size: auto auto;
+				background-color: white;
+				background-image: repeating-linear-gradient(135deg, transparent, transparent 10px, #fff4c5 10px, #fff4c5 20px);
+				height: 100px;
+				padding-left: 50px;
+				line-height: 100px;
+				font-size: 28px;
+			}
+		}
+		.work--flow--next {
+			background: transparent linear-gradient(0deg, #FF9B37 0%, #FFE137 100%) 0% 0% no-repeat padding-box;
+			opacity: 1;
+			margin: 23px auto;
+		}
+		.work--flow__1 {
+			background-image: url(http://localhost:8888/terucafe/wp-content/themes/daitomo/WordPressTheme/assets/img/tech-box-1.jpg);
+		}
+		.work--flow__2 {
+			background-image: url(http://localhost:8888/terucafe/wp-content/themes/daitomo/WordPressTheme/assets/img/tech-box-2.jpg);
+		}
+		.work--flow__3 {
+			background-image: url(http://localhost:8888/terucafe/wp-content/themes/daitomo/WordPressTheme/assets/img/tech-box-3.jpg);
+		}
+		.work--flow__4 {
+			background-image: url(http://localhost:8888/terucafe/wp-content/themes/daitomo/WordPressTheme/assets/img/tech-box-4.jpg);
+		}
+		.work--flow__5 {
+			background-image: url(http://localhost:8888/terucafe/wp-content/themes/daitomo/WordPressTheme/assets/img/tech-box-5.jpg);
+		}
+	}
+	.house-image2 {
+		display: block;
+		margin: 106px auto 76px;
+	}
+	ul {
+		padding: 0 83px 37px;
+		display: flex;
+		justify-content: space-between;
+		li {
+			width: 414px;
+			a {
+				display: block;
+				margin: 38px auto 0;
+			}
+		}
+	}
+}

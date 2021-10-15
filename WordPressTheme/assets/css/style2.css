@@ -1,0 +1,269 @@
+/*====================================================================
+                    reset
+====================================================================*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+header, footer, nav, section, article, aside, figure, figcaption {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+/*====================================================================
+                    mixin
+====================================================================*/
+@media screen and (max-width: 1025px) {
+  .is-sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .is-pc {
+    display: none;
+  }
+}
+
+/*====================================================================
+                    common-style
+==================================================================*/
+* {
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+.contents-center {
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*====================================================================
+                    index
+====================================================================*/
+.main {
+  font-family: TsukuARdGothicStd-R-83pv-RKSJ-H serif;
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.main .top-img {
+  width: 100%;
+  height: auto;
+}
+
+.main .about {
+  margin-top: 48.15px;
+  margin-bottom: 39px;
+}
+
+.main .about .inner {
+  padding: 0 60px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.main .about .about-title {
+  font-size: 42px;
+}
+
+.main .about .bout-title__sub {
+  font-size: 18px;
+}
+
+.main .about .about-desc-img {
+  position: relative;
+  z-index: -1;
+}
+
+.main .about .about-desc-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main .about .about-desc-img img {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.main .about .about-desc-text {
+  margin-top: 63px;
+}
+
+.main .about .about-desc-text__comment {
+  font-size: 32px;
+  width: 452px;
+  margin-bottom: 16px;
+  padding-top: 180px;
+}
+
+.main .about .about-desc-text__desc {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  width: 460px;
+  padding: 8px;
+  height: 300px;
+  margin-left: 70px;
+}
+
+.main .suggestion {
+  margin-bottom: 160px;
+}
+
+.main .suggestion-mark {
+  margin-bottom: 36px;
+}
+
+.main .suggestion-mark img {
+  width: 80px;
+  height: 80px;
+}
+
+.main .suggestion-title {
+  margin-bottom: 48.8px;
+  font-size: 42px;
+}
+
+.main .suggestion-img {
+  margin-bottom: 60px;
+}
+
+.main .suggestion-img img {
+  width: 500px;
+  height: auto;
+}
+
+.main .suggestion-text-wrap {
+  width: 452px;
+}
+
+.main .performance {
+  margin-bottom: 140px;
+}
+
+.main .performance-title {
+  margin-bottom: 53px;
+  font-size: 42px;
+}
+
+.main .performance-text {
+  width: 452px;
+}
+
+.main .flow-title {
+  font-size: 42px;
+  margin-bottom: 47px;
+}
+
+.main .flow-illust {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.main .flow-illust__item {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 5);
+          flex: 0 0 calc(100% / 5);
+  background-color: #FFE9D5;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.main .flow-illust__item:first-child::after, .main .flow-illust__item:first-child::before {
+  display: none;
+}
+
+.main .flow-illust__item::after, .main .flow-illust__item::before {
+  position: absolute;
+  content: "";
+  height: 94px;
+  width: 6px;
+  background-color: #fff;
+}
+
+.main .flow-illust__item::after {
+  top: -7px;
+  left: -10px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.main .flow-illust__item::before {
+  bottom: -7px;
+  left: -10px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.main .flow-illust__item__title {
+  font-size: 21px;
+  margin-bottom: -5px;
+}
+
+.main .flow-illust__item__text {
+  width: 159px;
+  margin: 0 auto;
+}
+
+.main .flow-illust .step04 .flow-illust__item__text {
+  width: 160px;
+}
+
+/*====================================================================
+                    about
+====================================================================*/
+/*====================================================================
+                    works
+====================================================================*/
+body {
+  height: 30px;
+}
+
+/*====================================================================
+                    blog
+====================================================================*/
+/*====================================================================
+                    contact
+====================================================================*/
+/*====================================================================
+                    contact-after
+====================================================================*/
+/*# sourceMappingURL=style.css.map */

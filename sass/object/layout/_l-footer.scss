@@ -20,12 +20,50 @@
 			}
 		}
 		.footer__menu {
-			.menu{
+			width: 600px;
+			#menu-footer-nav {
 				display: flex;
+				justify-content: space-between;
 				li a {
-					color: #000;
-					text-decoration: none;
+					color: #333;
 				}
+				> li:nth-child(2) {
+					flex-direction: column;
+					a {
+						display: block;
+					}
+					> ul.sub-menu {
+						>li {
+							display: block;
+							flex-direction: column;
+							a{
+								display: block;
+								padding-left: 1.5rem;
+							}
+							> ul.sub-menu li a {
+								padding-left: 3rem;
+							}
+						}
+					}
+				}
+					> li:nth-child(3){
+						> ul.sub-menu {
+							display: block;
+							padding-left: 1.5rem;
+					}
+				}
+					> li:last-child {
+						> a {
+							display: block;
+						}
+						> ul.sub-menu {
+							display: block;
+							>li {
+								display: block;
+								flex-direction: column;
+							}
+						}
+					}
 			}
 		}
 	}

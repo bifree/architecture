@@ -86,7 +86,7 @@ video {
 
 body {
 	color: #000333;
-	font-family: 'TsukuARdGothicStd-B-83pv-RKSJ-H','Dotum';
+	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-weight: 100;
 	line-height: 1;
 }
@@ -214,13 +214,57 @@ select {
 	margin-bottom: 8px;
 }
 
-.l-footer .footer .footer__menu .menu {
-	display: flex;
+.l-footer .footer .footer__menu {
+	width: 600px;
 }
 
-.l-footer .footer .footer__menu .menu li a {
-	color: #000;
-	text-decoration: none;
+.l-footer .footer .footer__menu #menu-footer-nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.l-footer .footer .footer__menu #menu-footer-nav li a {
+	color: #333;
+}
+
+.l-footer .footer .footer__menu #menu-footer-nav > li:nth-child(2) {
+	flex-direction: column;
+}
+
+.l-footer .footer .footer__menu #menu-footer-nav > li:nth-child(2) a {
+	display: block;
+}
+
+.l-footer .footer .footer__menu #menu-footer-nav > li:nth-child(2) > ul.sub-menu > li {
+	display: block;
+	flex-direction: column;
+}
+
+.l-footer .footer .footer__menu #menu-footer-nav > li:nth-child(2) > ul.sub-menu > li a {
+	display: block;
+	padding-left: 1.5rem;
+}
+
+.l-footer .footer .footer__menu #menu-footer-nav > li:nth-child(2) > ul.sub-menu > li > ul.sub-menu li a {
+	padding-left: 3rem;
+}
+
+.l-footer .footer .footer__menu #menu-footer-nav > li:nth-child(3) > ul.sub-menu {
+	display: block;
+	padding-left: 1.5rem;
+}
+
+.l-footer .footer .footer__menu #menu-footer-nav > li:last-child > a {
+	display: block;
+}
+
+.l-footer .footer .footer__menu #menu-footer-nav > li:last-child > ul.sub-menu {
+	display: block;
+}
+
+.l-footer .footer .footer__menu #menu-footer-nav > li:last-child > ul.sub-menu > li {
+	display: block;
+	flex-direction: column;
 }
 
 .l-header {
@@ -774,6 +818,133 @@ select {
 	justify-content: center;
 	margin-bottom: 95px;
 	text-align: center;
+}
+
+.tech-page h1 {
+	font-size: 42px;
+	font-weight: normal;
+	line-height: 73px;
+	margin: 48px auto 0;
+	text-align: center;
+}
+
+.tech-page h2 {
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 56px;
+	text-align: center;
+}
+
+.tech-page p {
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.tech-page .tech-top {
+	margin: 67px auto 100px;
+}
+
+.tech-page .tech-top .tech-top-image {
+	height: 400px;
+	width: 600px;
+}
+
+.tech-page .tech-top .tech-top-image img {
+	height: 100%;
+	width: 100%;
+}
+
+.tech-page .tech-top .tech-top-message {
+	width: 433px;
+}
+
+.tech-page .work--flow {
+	background-color: #FFF4E9;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	width: 700px;
+}
+
+.tech-page .work--flow .work--flow--box {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	height: 250px;
+	margin: 0 auto;
+	width: 640px;
+}
+
+.tech-page .work--flow .work--flow--box .work--flow--inner {
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	height: 100%;
+	opacity: 0.75;
+	z-index: 1;
+}
+
+.tech-page .work--flow .work--flow--box .work--flow--inner h2 {
+	text-align: center;
+}
+
+.tech-page .work--flow .work--flow--box .work--flow--inner p {
+	margin: 0 auto;
+	width: 602px;
+}
+
+.tech-page .work--flow .work--flow--box .custom-home-title {
+	background-color: white;
+	background-image: repeating-linear-gradient(135deg, transparent, transparent 10px, #fff4c5 10px, #fff4c5 20px);
+	background-size: auto auto;
+	font-size: 28px;
+	height: 100px;
+	line-height: 100px;
+	padding-left: 50px;
+}
+
+.tech-page .work--flow .work--flow--next {
+	background: transparent linear-gradient(0deg, #FF9B37 0%, #FFE137 100%) 0% 0% no-repeat padding-box;
+	margin: 23px auto;
+	opacity: 1;
+}
+
+.tech-page .work--flow .work--flow__1 {
+	background-image: url(http://localhost:8888/terucafe/wp-content/themes/daitomo/WordPressTheme/assets/img/tech-box-1.jpg);
+}
+
+.tech-page .work--flow .work--flow__2 {
+	background-image: url(http://localhost:8888/terucafe/wp-content/themes/daitomo/WordPressTheme/assets/img/tech-box-2.jpg);
+}
+
+.tech-page .work--flow .work--flow__3 {
+	background-image: url(http://localhost:8888/terucafe/wp-content/themes/daitomo/WordPressTheme/assets/img/tech-box-3.jpg);
+}
+
+.tech-page .work--flow .work--flow__4 {
+	background-image: url(http://localhost:8888/terucafe/wp-content/themes/daitomo/WordPressTheme/assets/img/tech-box-4.jpg);
+}
+
+.tech-page .work--flow .work--flow__5 {
+	background-image: url(http://localhost:8888/terucafe/wp-content/themes/daitomo/WordPressTheme/assets/img/tech-box-5.jpg);
+}
+
+.tech-page .house-image2 {
+	display: block;
+	margin: 106px auto 76px;
+}
+
+.tech-page ul {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 83px 37px;
+}
+
+.tech-page ul li {
+	width: 414px;
+}
+
+.tech-page ul li a {
+	display: block;
+	margin: 38px auto 0;
 }
 
 @media screen and (min-width: 1440px) {

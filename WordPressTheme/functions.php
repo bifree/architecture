@@ -25,8 +25,6 @@ function my_setup() {
 }
 add_action( 'after_setup_theme', 'my_setup' );
 
-
-
 /**
  * CSSとJavaScriptの読み込み
  *
@@ -41,9 +39,6 @@ function my_script_init()
 
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
-
-
-
 
 /**
  * メニューの登録
@@ -152,3 +147,108 @@ function my_excerpt_more( $more ) {
 
 }
 add_filter( 'excerpt_more', 'my_excerpt_more' );
+
+add_action('init','create_post_type');
+function create_post_type(){
+	register_post_type('news',//
+	array(
+		'labels'=>array(
+			'name'=>__('新着'),//
+			'singular_name'=>__('新着')
+		),
+		'public'=>true,
+		'query_var'=>true,
+		'hierarchical'=>false,
+		'menu_positon'=>6,
+		'has_archive'=>true,
+		'supports'=>array(
+			'title',
+			'author',
+			'editor',
+			'custom-fields',
+			'thumbnail',
+			'excerpt',
+		),
+	));
+
+	register_post_type('reform-info',//
+	array(
+		'labels'=>array(
+			'name'=>__('リフォーム'),//
+			'singular_name'=>__('リフォーム')
+		),
+		'public'=>true,
+		'query_var'=>true,
+		'hierarchical'=>false,
+		'menu_positon'=>6,
+		'has_archive'=>true,
+		'supports'=>array(
+			'title',
+			'author',
+			'editor',
+			'custom-fields',
+			'thumbnail',
+			'excerpt',
+		),
+	));
+
+	register_post_type('soundproof',//
+	array(
+		'labels'=>array(
+			'name'=>__('防音室'),//
+			'singular_name'=>__('防音室')
+		),
+		'public'=>true,
+		'query_var'=>true,
+		'hierarchical'=>false,
+		'menu_positon'=>6,
+		'has_archive'=>true,
+		'supports'=>array(
+			'title',
+			'author',
+			'editor',
+			'category',
+			'custom-fields',
+			'thumbnail',
+			'excerpt',
+		),
+	));
+/* ここから */
+	register_taxonomy(
+	‘event_cat’, /* タクソノミーの名前 */
+	‘event’,
+	array(
+	‘hierarchical’ => true, //カテゴリータイプの指定
+	‘update_count_callback’ => ‘_update_post_term_count’,
+	//ダッシュボードに表示させる名前
+	‘label’ => ‘イベントのカテゴリー’,
+	‘public’ => true,
+	‘has_archive’ => true, /* アーカイブページを持つ */
+	‘show_ui’ => true
+	)
+	);
+	register_taxonomy_for_object_type('post_tag', 'article');
+}
+
+function add_post_category_archive( $wp_query ) {
+	if ($wp_query->is_main_query() && $wp_query->is_category()) {
+	$wp_query->set( 'post_type', array('post','article'));
+	}
+	}
+	add_action( 'pre_get_posts', 'add_post_category_archive' , 10 , 1);
+
+	function add_post_tag_archive( $wp_query ) {
+		if ($wp_query->is_main_query() && $wp_query->is_tag()) {
+		$wp_query->set( 'post_type', array('post','article'));
+		}
+		}
+		add_action( 'pre_get_posts', 'add_post_tag_archive' , 10 , 1);
+
+//物件詳細・画像の取得・カスタムフィールド
+function my_custom_single_popular_post( $post_html, $p, $instance ){
+	//画像(返り値は「画像ID」)
+	$img = get_field( 'img', $p->id ); // 'img' には Advanced Custom Fields で設定した物を入れてください。
+	$imageUrl = wp_get_attachment_image_src( $img, 'full' ); //サイズは自由に
+	$imghtml = '<img src="'.$imageUrl[ 0 ].'" alt="">';
+	// （略）
+}
