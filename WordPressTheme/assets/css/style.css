@@ -399,8 +399,17 @@ select {
 	width: 180px;
 }
 
+.l-inner .contact--items .contact--mail .contact--mail__inner img {
+	line-height: 100px;
+	vertical-align: middle;
+}
+
 .l-inner .contact--items .contact--mail .contact--mail__inner .contact--mail__text {
-	margin-top: 22px;
+	margin-top: 47px;
+}
+
+.l-inner .custom-home-photos {
+	margin-bottom: 100px;
 }
 
 .l-inner .top--image {
@@ -446,6 +455,14 @@ select {
 	width: 1080px;
 }
 
+.main .inner .thumbnail-photo {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100%;
+	width: 100%;
+}
+
 .main .custom-home-title {
 	background-color: white;
 	background-image: repeating-linear-gradient(135deg, transparent, transparent 10px, #fff4c5 10px, #fff4c5 20px);
@@ -487,17 +504,18 @@ select {
 }
 
 .main .custom-home-slider-area .custom-home-slider__thumb-area-wrap > .vertical-img {
-	height: 110px;
 	margin-bottom: 10px;
-	width: 72.5px;
+	max-width: 72.5px;
+	min-height: 110px;
 }
 
 .main .custom-home-slider-area .custom-home-slider__thumb-area-wrap .thumbnail-current {
 	border: 2px solid #1C1C1C;
 }
 
-.main .custom-home-slider-area .custom-home-slider__thumb-area-wrap .thumbnail-item {
+.main .custom-home-slider-area .custom-home-slider__thumb-area-wrap .thumbnail-li {
 	margin-left: 16.88px;
+	margin-top: 10px;
 }
 
 .main .custom-home-slider-area .custom-home-slider__thumb-area-wrap > .horizontal-img {
@@ -536,7 +554,6 @@ select {
 
 .main .custom-home-slider-area__bg .custom-home-slider-area__img-wrap .horizontal-img {
 	height: 580px !important;
-	margin-top: 150px;
 	width: 880px !important;
 }
 

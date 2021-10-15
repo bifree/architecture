@@ -104,11 +104,18 @@
 				width: 180px;
 				margin: 0 auto;
 				text-align: center;
+				img {
+					line-height: 100px;
+					vertical-align: middle;
+				}
 				.contact--mail__text{
-					margin-top: 22px;
+					margin-top: 47px;
 				}
 			}
 		}
+	}
+	.custom-home-photos {
+		margin-bottom: 100px;
 	}
 
 	@include mq(tab) {
